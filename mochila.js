@@ -9,5 +9,11 @@ module.exports = {
       peso += item.peso;
     });
     return peso;
+  },
+  verificarSeEstaCheia: function() {
+    if (this.pesoMaximo - this.pesoAtual() <= 0) {
+      return true;
+    }
+    return false;
   }
 };
