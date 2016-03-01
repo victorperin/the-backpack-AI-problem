@@ -15,5 +15,13 @@ module.exports = {
       return true;
     }
     return false;
+  },
+  adicionarItem: function(item) {
+    let pesoFuturo = this.pesoAtual() + item.peso;
+    if (pesoFuturo <= this.pesoMaximo) {
+      this.itens.push(item);
+      return true;
+    }
+    return false;
   }
 };
