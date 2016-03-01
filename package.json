@@ -1,7 +1,7 @@
 {
   "name": "the-backpack-ai-problem",
-  "version": "0.0.0",
-  "description": ":construction: IT`S UNDER CONSTRUCTION :construction:",
+  "version": "1.0.0",
+  "description": "Resolve the backpack problem in javascript",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
