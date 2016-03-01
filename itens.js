@@ -1,6 +1,6 @@
 "use strict";
 
-module.exports = [
+let itens = [
   {nome: "Escova de Dentes", peso: 30, importancia: 10},
   {nome: "Tubo de Pasta de Dente", peso: 45, importancia: 10},
   {nome: "Capa de Chuva", peso: 370, importancia: 7},
@@ -25,3 +25,9 @@ module.exports = [
   {nome: "Barra de Cereal", peso: 60, importancia: 5},
   {nome: "Sanduiche", peso: 250, importancia: 8}
 ];
+
+exports.porImportancia = function() {
+  return itens.sort(function(anterior, atual) {
+    return atual.importancia - anterior.importancia;
+  });
+};
